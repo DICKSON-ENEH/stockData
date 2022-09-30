@@ -27,7 +27,7 @@ useEffect(()=>{
     getdata()
 }, [])
   return (
-    <div>
+    <Div>
 <h3>
     Tabular representation of Data
 </h3>
@@ -41,30 +41,30 @@ useEffect(()=>{
     />
 </span>
 <Table>
-<tbody>
-    <tr>
-        <td>Name</td>
-        <td> currency</td>
-        <td> ticker</td>
-        <td> Volume</td>
-        <td> mic_code</td>
-        <td> price</td>
-    </tr>
-</tbody>
+<Tablebody>
+    <Trol>
+        <Tdescription>Name</Tdescription>
+        <Tdescription> currency</Tdescription>
+        <Tdescription> ticker</Tdescription>
+        <Tdescription> Volume</Tdescription>
+        <Tdescription> mic_code</Tdescription>
+        <Tdescription> price</Tdescription>
+    </Trol>
+</Tablebody>
 {
     filtered?.map((props)=>{
         return(
-<tbody>
-    <tr>
-        <td>{props.name}</td>
-        <td> {props.currency}</td>
-        <td> {props.ticker}</td>
-        {/* <td> {props.ticker}</td> */}
-        <td> {props.volume}</td>
-        <td> {props.mic_code}</td>
-        <td> {props.price}</td>
-    </tr>
-</tbody>
+<Tablebody>
+    <Trol>
+        <Tdescription>{props.name}</Tdescription>
+        <Tdescription> {props.currency}</Tdescription>
+        <Tdescription> {props.ticker}</Tdescription>
+        {/* <Tdescription> {props.ticker}</Tdescription> */}
+        <Tdescription> {props.volume}</Tdescription>
+        <Tdescription> {props.mic_code}</Tdescription>
+        <Tdescription> {props.price}</Tdescription>
+    </Trol>
+</Tablebody>
         )
 
     })
@@ -72,7 +72,7 @@ useEffect(()=>{
 
 </Table>
 
-    </div>
+    </Div>
   )
 }
 
@@ -86,3 +86,34 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
 border: 0;
 border-radius: 3px;
 `
+const Div = styled.div`
+width:100%;
+/* background-color:red */
+`
+const Tablebody=styled.tbody`
+
+@media(max-width:470px){
+    /* background-color: red; */
+    width: 470px;
+}
+@media(max-width:460px){
+    /* background-color: green; */
+    /* width: 470px; */
+}
+@media(max-width:440px){
+    /* background-color: green; */
+    width: 400px;
+}
+@media(max-width:430px){
+    /* background-color: green; */
+    /* width: 400px; */
+}
+`
+const Tdescription=styled.td`
+@media(max-width:430px){
+    /* background-color: green; */
+    /* width: 400px; */
+    font-size: 14px;
+}
+`
+const Trol = styled.tr``

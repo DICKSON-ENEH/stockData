@@ -59,6 +59,7 @@ const SignIn = () => {
         });
         setLoading(false);
       console.log(err)
+      navigate("/signin")
 
       });
     reset();
@@ -102,6 +103,7 @@ const Top = styled.div`
   font-size: 25px;
   margin-bottom: 10px;
   font-weight: 500;
+  text-align: center;
 
   @media (max-width: 768px) {
     font-size: 23px;
@@ -191,6 +193,7 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 
   border-radius: 5px;
   display: flex;
   justify-content: center;
+  background-color: #fff;
   padding: 20px 0;
   flex-direction: column;
   /* background-color: #272b33; */
@@ -211,7 +214,8 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-  width: 100%;
+  width: 100%; 
   height: 100vh;
-  /* background-color: #0a0c10; */
+
+  background-color: #F9FCFF;
 `;

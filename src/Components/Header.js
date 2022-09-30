@@ -57,12 +57,22 @@ const FirstName = styled.div`
   margin-left: 10px;
   font-weight: 500;
   font-size: 17px;
-  color:#fff
+  color:#fff;
+  @media(max-width:430px){
+    /* background-color: green; */
+    /* width: 400px; */
+    font-size: 12px;
+}
 `;
 
 const Logo = styled.div`
   font-weight: 700;
   font-size: 25px;
+  @media(max-width:430px){
+    /* background-color: green; */
+    /* width: 400px; */
+    font-size: 18px;
+}
 `;
 
 const Wrapper = styled.div`
@@ -71,6 +81,8 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  
 `;
 const Container = styled.div`
   height: 60px;
@@ -80,4 +92,8 @@ const Container = styled.div`
   align-items: center;
   background-color: #272b33;
   color: white;
+  @media(max-width:440px){
+    /* background-color: green; */
+    width: 400px;
+}
 `;

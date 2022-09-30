@@ -3,6 +3,7 @@ import {Chart as ChartJs, BarElement, CategoryScale, LinearScale} from "chart.js
 import {Bar} from "react-chartjs-2"
 import axios from "axios"
 import Header from './Header'
+import styled from 'styled-components'
 
 
 
@@ -66,8 +67,10 @@ useEffect(()=>{
     }
   
   return (
-    <div>
-        <Header/>
+    <>
+   
+    <Div>
+<Header/>
         <div>
 
         <Bar
@@ -83,8 +86,14 @@ useEffect(()=>{
         </div>
         <br/>
         
-    </div>
+    </Div>
+    </>
   )
 }
 
 export default BarChart
+
+const Div = styled.div`
+width:100%;
+/* background-color: red; */
+`
