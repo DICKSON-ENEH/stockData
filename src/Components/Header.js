@@ -70,7 +70,7 @@ const Logo = styled.div`
   font-size: 25px;
   @media(max-width:430px){
     /* background-color: green; */
-    /* width: 400px; */
+    width: 400px;
     font-size: 18px;
 }
 `;
