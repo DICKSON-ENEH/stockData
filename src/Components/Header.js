@@ -9,7 +9,7 @@ import styled from "styled-components";
 const Header = () => {
   const dispatch = useDispatch();
   const userData = useSelector((state) => state.currentUser);
-//   console.log(userData)
+  // console.log(userData.token)
   return (
     <Container>
       <Wrapper>
