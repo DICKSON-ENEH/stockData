@@ -37,7 +37,7 @@ getAll()
 					
                     {props.aspirants}
                     </Text1>
-                    <Text1>{props.price}</Text1>
+                    <Text1>#{props.price}</Text1>
                  
 			</TopLine1>
                 ))
